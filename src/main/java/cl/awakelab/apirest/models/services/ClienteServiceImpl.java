@@ -19,20 +19,16 @@ public class ClienteServiceImpl implements IClienteService {
   @Override
   @Transactional(readOnly = true)
   public List<Cliente> findAll() {
-    // TODO Auto-generated method stub
     return (List<Cliente>) clienteDao.findAll();
   }
 
   @Override
   public Optional<Cliente> findById(Long id) {
-    // TODO Auto-generated method stub
     return clienteDao.findById(id);
   }
 
   @Override
   public Cliente save(Cliente cliente) {
-    // TODO Auto-generated method stub
- 
     return clienteDao.save(cliente);
   }
 
